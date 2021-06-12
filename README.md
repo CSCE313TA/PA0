@@ -31,15 +31,15 @@ The objective of this programming assignment is to help you ready for other prog
 Note that “stack frame” may contain the sequence of all function calls from your code all the way up to and inside some library functions that were called by your program. For instance, if you call function testfunction() from your main(), and then the testfunction() eventually calls a library function to allocate memory, and if your program crashes from inside the alloc function, gdb will crash and stop at the allocation function. However, to assist you with finding the source of the error, gdb will also contain the entire stack frame. At level 0, there would be the alloc function, then at level 1 the testfunction() and finally at level 2 you will find the main() function. There may be more levels below the main() to further indicate which program. The nice thing is you can even navigate between these levels and investigate variables in each layer.
 
 5.  **[GDB Breakpoint/Print]** The backtrace summary shows that the program stops at the statement in Line 15 (you can see the line numbers in any editor). Let’s dig into what causes the segmentation fault error. (1) Set a breakpoint in Line 15, (2) run your program inside gdb. When you see a question, “Start it from the beginning? (y or n)”, choose y. Then, your program starts again from the beginning and stop at the breakpoint. (3) Then, print what is stored in mylist[i] by using a gdb command (neither cout or printf).
-<br>
+
 6.  **[C++ Runtime Error Fix (Null-Pointer)]** Store a value (i.e., in the value member variable) in mylist[i] and write a statement in Blank C to fix the segmentation error (Hint: de-reference the mylist[i] as a pointer instead of as a value).
-<br>
+
 7.  **[C++ Runtime Error Fix (non-NULL garbage value Pointer)]** Compile the program again and run it inside gdb. You still face another segmentation fault in function _sum_LL_, which you need to fix and explain. (Hint: The second part of function _create_LL_ should be corrected as well)
-<br>
+
 8.  **[Deletion of Dynamically Allocated Memory]** The function _create_LL_ dynamically allocates memory from the heap for elements (i.e. nodes) of mylist. Write code to free these allocated memory to avoid memory leak in blank D.
-<br>
+
 9.  **[AddressSanitizer]** Now start the whole thing from scratch, but this time with AddressSanitizer instead of gdb. It is easy to get started with this binary analysis tool. Just compile your program with an additional option -fsanitize=address, run your program as is and see how it can quickly find the potential memory errors at even more ease. Note that this is a break-at-first-error type tool which makes your program exit upon finding the first possible cause of memory corruption. Therefore, you need to run your program a few times to catch all the errors.
-<br>
+
 10.  **[Using IDE]** Now, repeat everything in the above list of tasks, but this time under your favorite GUI IDE. We recommend using CLion, Visual Studio Code, or anything that you like. However, make sure that you are the IDE for debugging and running in addition to writing code. That means that you must be able to use all features of gdb from the IDE’s menu items at the click of your mouse, without going back to the gdb’s CLI. For this, make sure that CLion/Code can locate the g++ compiler and gdb debugger and use them. You may have to do this step manually if not done automatically by the IDE.
 ___
 **Report**
