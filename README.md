@@ -13,15 +13,15 @@ The objective of this programming assignment is to help you ready for other prog
 -  Or a remote but dedicated linux machine from [Amazon AWS](https://aws.amazon.com/marketplace/pp/prodview-vkoypmw6w3ta2).
 
 	Once you have your linux box ready, install various packages (e.g., **g++, gdb, clion, AddressSanitizer**) using standard commands (i.e., **sudo apt-get install <package-name>**)
-<br>
+
 2.  **[C++ Compilation]** Compile your buggy C++ program to have an executable program called buggy, (not a.out). Note that buggy.cpp does not compile as is. You must fix the compile errors first. Here is list of things to start with:
 
 	1.  Write a statement in **_Blank A_** to include the required header files.
 	2.  Write an access specifier in **_Blank B_** to allow variables to be used from outside of the class.
 	3.  Correct the statements in **Lines 15, 16, 21, 28, 29,** where a member variable of an object is accessed through a pointer variable.
-<br>
+
 3.  **[Compilation with symbol table]** Next, you begin fixing the runtime errors. First, compile your program. Note that if you compile your program as usual and then launch it under gdb, the symbol table will not be loaded and all printed variable names or line numbers to locate the errors will be in some internal address format - not easy for us to make sense of. To solve this problem, you need to compile with the “-g” option (e.g., g++ buggy.cpp -g). In addition, it is best not to use any optimizations so that the job of AddressSanitizer as a memory-error-catcher is easier.
-<br>
+
 5.  **[GDB Start/Run/Backtrace]** Once compiled, do the following:
 
 	1.  Launch the executable under gdb (i.e. gdb buggy)
