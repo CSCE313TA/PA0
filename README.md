@@ -6,7 +6,7 @@ The objective of this programming assignment is to help you ready for other prog
 
 **Your Task**
 
-1.  **System Setup:** Set up the development environment by choosing one of these options:
+1.  **[System Setup]** Set up the development environment by choosing one of these options:
 
 -  [Oracle VM Virtual Machine](https://www.virtualbox.org/) with [Xubuntu](https://xubuntu.org/ "Great for Linux noobs") (i.e., lightweight Ubuntu) or [Xfce](https://linuxmint.com/download.php "") (i.e. lightweighht Mint)  system,
 -  A full Ubuntu setup with dual boot along with existing OS ([Windows](https://www.youtube.com/watch?v=-iSAyiicyQY)/[Mac](https://www.youtube.com/watch?v=o30qsxv1CsM) partition with Linux),
