@@ -48,7 +48,7 @@ Submit a report with the corrected code on ecampus. The report should document t
 
 For no 10, you can just include a screenshot of debugging inside your IDE. That will be adequate for this part.
 
-```
+```C++
 #include <iostream>
 
 //Blank A
