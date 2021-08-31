@@ -1,7 +1,7 @@
 #include <iostream>
- //Blank A
+ // Blank A
 class node {
- //Blank B	
+ // Blank B	
  	int val;
  	node* next;
 };
@@ -9,14 +9,14 @@ class node {
 void create_LL(vector<node*>& mylist, int node_num){
     mylist.assign(node_num, NULL);
 
-    //create a set of nodes
+    // create a set of nodes
     for (int i = 0; i < node_num; i++) {
         //Blank C
         mylist[i].val = i;
         mylist[i].next = NULL;
     }
 
-    //create a linked list
+    // create a linked list
     for (int i = 0; i < node_num; i++) {
         mylist[i].next = mylist[i+1];
     }
@@ -39,6 +39,6 @@ int main(int argc, char ** argv){
     int ret = sum_LL(mylist[0]); 
     cout << "The sum of nodes in LL is " << ret << endl;
 
-    //Step4: delete nodes
-    //Blank D
+    // Step 5: delete nodes
+    // Blank D
 }
