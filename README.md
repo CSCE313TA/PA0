@@ -8,7 +8,7 @@ The objective of this programming assignment is to help you prepare for other pr
 
 1. Include any required header files in **_Blank A_**
 2. Write the appropriate access specifier in **_Blank B_**
-3. **Lines 15, 16, 21, 28, 29** to dereference before accessing a member value
+3. Change **Lines 15, 16, 21, 28, 29** (line numbers based on original file) to dereference before accessing a member value
 4. Rewrite the code around **_Blank C_** so that it does not cause a segmentation fault
 5. Add code in **_Blank D_** to free your nodes so you do not leak memory
 
