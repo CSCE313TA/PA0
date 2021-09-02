@@ -1,4 +1,4 @@
-# <p align="center">PA 0: Environment Setup, AddressSanitizer and GDB <br> Due on Thursday 9/07/2021 at 11:59pm <p>
+# <p align="center">PA 0: Environment Setup, AddressSanitizer and GDB <br> Due on Tuesday 9/07/2021 at 11:59pm <p>
 
 **Introduction**
 
